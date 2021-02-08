@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Demo from './components/demo'
+import R from './components/Renu'
+import Hook from './components/hookslnc'
+import ClassBasedCom from "./components/classBasedComponent"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello NEC</h1>
+      <Demo></Demo>
+       <Demo />
+       <Demo />
+       <Demo />
+       <R name=" Renu">NEC</R>
+       <R name=" Renuka">NEC</R>
+       <Home/>
+       <h1>Hooks Concept</h1>
+       <Hook />
+       <ClassBasedCom />
     </div>
   );
 }
-
+let Home=()=>{
+  return(
+    <h1>This is my Home Component</h1>
+  );
+}
 export default App;
